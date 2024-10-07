@@ -1,0 +1,56 @@
+body {
+    background-color: grey;
+}
+
+table {
+    background-color: white;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: orange;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #e0e0e0;
+}
+
+img:hover {
+    width: 150%; /* Changer la taille de l'image au survol */
+    transform: scale(1.5); /* 2ème technique */
+}
+
+
+h1:first-of-type {
+    text-align: center; /* Centre le premier h1 */
+    margin-top: 20px; /* Espace au-dessus du titre */
+    margin-bottom: 20px; /* Espace en dessous du titre */
+}
+
+h1:nth-of-type(n+2) {
+    text-align: left; /* Aligne à gauche tous les h1 sauf le premier */
+    margin-top: 20px; /* Espace au-dessus du titre */
+    margin-bottom: 20px; /* Espace en dessous du titre */
+}
+/* Gradient de fond */
+body {
+    background: linear-gradient(to right, #f0f0f0, #d9d9d9);}
+
+/* Media query */
+@media only screen and (max-width: 600px) {
+    body {
+        background: linear-gradient(to right, #e6f0ff, #cce5ff);
+    }
+    table {
+        width: 100%; /* Tableau toujours à 100% de la largeur */
+    }
+}
